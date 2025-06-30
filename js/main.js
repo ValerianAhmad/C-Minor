@@ -60,4 +60,9 @@
     $("#reserveForm")[0].reset();
     $("#reserveForm")[0].classList.remove("was-validated");
   });
+
+  // ==== PRELOADER === //
+  $(window).on('load', function () {
+    $('#preloader').fadeOut('slow');
+  });
 })(jQuery);

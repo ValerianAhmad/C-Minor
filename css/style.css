@@ -1,5 +1,9 @@
 /* Header */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -241,3 +245,44 @@ h4,
   animation: action 1s infinite alternate;
 }
 
+/* === PRELOADER === */
+/* === PRELOADER (spinner + single‑line text) === */
+#preloader {
+  position: fixed;
+  inset: 0;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.spinner-wrap {
+  display: flex;
+  align-items: center; /* spinner & teks sejajar */
+  gap: 12px; /* jarak antara spinner & teks */
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #da9f5b; /* warna primary */
+  border-top: 4px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.loader-text {
+  font-size: 18px;
+  color: #33211d;
+  white-space: nowrap; /* tetap satu baris */
+  letter-spacing: 0.5px;
+  font-style: italic;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

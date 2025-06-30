@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- CDN AOS -->
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+
     <!-- FAVICON -->
     <link rel="icon" href="img/favicon.ico">
 
@@ -30,12 +33,21 @@
 </head>
 
 <body>
+    <!-- PRELOADER -->
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="spinner-wrap">
+            <div class="spinner"></div>
+            <span class="loader-text">Brewing&nbsp;your&nbsp;coffee…</span>
+        </div>
+    </div>
+
     <!-- Header Start -->
     <!-- Navbar Start -->
     <div class="container-fluid p-0 nav-bar">
         <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
             <a href="index.html" class="navbar-brand px-lg-4 m-0">
-                <img src="img/logo.png" alt=""
+                <img src="img/logo/logo.png" alt=""
                     style="height:60px; width:auto; display:inline-block; vertical-align:middle; margin-right:10px;">
                 <span style="display:inline-block; vertical-align:middle;">
                     <h1 class="m-0 display-4 text-uppercase text-white" style="display:inline; vertical-align:middle;">C
@@ -96,7 +108,8 @@
     <!-- About Start -->
     <div class="container-fluid py-5" id="about">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
+                data-aos-offset="0">
                 <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">
                     About Us</h4>
                 <h1 class="display-4">Serving Since 2025</h1>
@@ -141,7 +154,8 @@
     <!-- Service Start -->
     <div class="container-fluid pt-5" id="service">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
+                data-aos-offset="0">
                 <h3 class="text-primary text-uppercase" style="letter-spacing: 5px;">Service</h3>
                 <h1 class="display-4">Fresh & Organic Beans</h1>
             </div>
@@ -149,7 +163,8 @@
                 <div class="col-lg-6 mb-5">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img src="img/service-1.jpg" alt="" class="img-fluid mb-3 mb-sm-0">
+                            <img src="img/service/fastest-delivery.jpg" alt="fastest delivery"
+                                class="img-fluid mb-3 mb-sm-0">
                         </div>
                         <div class="col-sm-7">
                             <h4>
@@ -164,7 +179,7 @@
                 <div class="col-lg-6 mb-5">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img src="img/service-2.jpg" alt="" class="img-fluid mb-3 mb-sm-0">
+                            <img src="img/service/freshly-brewed.jpg" alt="" class="img-fluid mb-3 mb-sm-0">
                         </div>
                         <div class="col-sm-7">
                             <h4>
@@ -179,7 +194,7 @@
                 <div class="col-lg-6 mb-5">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img src="img/service-3.jpg" alt="" class="img-fluid mb-3 mb-sm-0">
+                            <img src="img/service/best-quality-coffee.jpg" alt="" class="img-fluid mb-3 mb-sm-0">
                         </div>
                         <div class="col-sm-7">
                             <h4>
@@ -193,7 +208,7 @@
                 <div class="col-lg-6 mb-5">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img src="img/service-4.jpg" alt="" class="img-fluid mb-3 mb-sm-0">
+                            <img src="img/service/online-reservation.jpg" alt="" class="img-fluid mb-3 mb-sm-0">
                         </div>
                         <div class="col-sm-7">
                             <h4>
@@ -213,7 +228,8 @@
 
 
     <!-- Offer Start -->
-    <div class="offer container-fluid my-5 py-5 text-center position-relative overlay-top overlay-bottom">
+    <div class="offer container-fluid my-5 py-5 text-center position-relative overlay-top overlay-bottom"
+        data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
         <div class="container py-5">
             <h1 class="display-5 text-primary mt-3">30% Off</h1>
             <h1 class="text-white mb-3">Sunday Special Off</h1>
@@ -237,16 +253,18 @@
     <!-- Menu Start -->
     <div class="container-fluid pt-5" id="menu">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
+                data-aos-offset="0">
                 <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Menu & Price</h4>
                 <h1 class="display-4">Competitive Pricing</h1>
             </div>
             <div class="row">
                 <div class="col-lg-6">
-                    <h1 class="mb-5">Coffee</h1>
-                    <div class="row align-items-center mb-5">
+                    <h1 class="mb-5" data-aos="fade-right" data-aos-anchor-placement="center-bottom">Coffee</h1>
+                    <div class="row align-items-center mb-5" data-aos="fade-right" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" data-aos-anchor-placement="center-bottom">
                         <div class="col-4 col-sm-3">
-                            <img src="img/menu-1.jpg" alt="" class="w-100 rounded-circle mb-3 mb-sm-0">
+                            <img src="img/menu/everyday-lattee.jpg" alt="" class="w-100 rounded-circle mb-3 mb-sm-0">
                             <h5 class="menu-price">30K</h5>
                         </div>
                         <div class="col-8 col-sm-9">
@@ -255,9 +273,10 @@
                                 specially for everyone</p>
                         </div>
                     </div>
-                    <div class="row align-items-center mb-5">
+                    <div class="row align-items-center mb-5" data-aos="fade-right" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" data-aos-anchor-placement="center-bottom">
                         <div class="col-4 col-sm-3">
-                            <img src="img/menu-2.jpg" alt="" class="w-100 rounded-circle mb-3 mb-sm-0">
+                            <img src="img/menu/caramel-macchiato.jpg" alt="" class="w-100 rounded-circle mb-3 mb-sm-0">
                             <h5 class="menu-price">28K</h5>
                         </div>
                         <div class="col-8 col-sm-9">
@@ -265,9 +284,10 @@
                             <p class="m-0">Caramel latte with less coffee and delightful caramel sauce on top</p>
                         </div>
                     </div>
-                    <div class="row align-items-center mb-5">
+                    <div class="row align-items-center mb-5" data-aos="fade-right" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
                         <div class="col-4 col-sm-3">
-                            <img src="img/menu-2.jpg" alt="" class="w-100 rounded-circle mb-3 mb-sm-0">
+                            <img src="img/menu/melacca.jpg" alt="" class="w-100 rounded-circle mb-3 mb-sm-0">
                             <h5 class="menu-price">26K</h5>
                         </div>
                         <div class="col-8 col-sm-9">
@@ -275,22 +295,24 @@
                             <p class="m-0">Our signature caffe latte sweetened with premium palm sugar</p>
                         </div>
                     </div>
-                    <div class="row align-items-center mb-5">
+                    <div class="row align-items-center mb-5" data-aos="fade-right" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
                         <div class="col-4 col-sm-3">
-                            <img src="img/menu-3.jpg" alt="" class="w-100 rounded-circle mb-3 mb-sm-0">
+                            <img src="img/menu/white.jpg" alt="" class="w-100 rounded-circle mb-3 mb-sm-0">
                             <h5 class="menu-price">25K</h5>
                         </div>
                         <div class="col-8 col-sm-9">
-                            <h4>White Lattee</h4>
-                            <p class="m-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, tempore!</p>
+                            <h4>White</h4>
+                            <p class="m-0">A classic coffee lattee</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <h1 class="mb-5">Non Coffee</h1>
-                    <div class="row align-items-center mb-5">
+                    <h1 class="mb-5" data-aos="fade-left">Non Coffee</h1>
+                    <div class="row align-items-center mb-5" data-aos="fade-left" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
                         <div class="col-4 col-sm-3">
-                            <img src="img/menu-1.jpg" alt="" class="w-100 rounded-circle mb-3 mb-sm-0">
+                            <img src="img/menu/matcha.jpg" alt="" class="w-100 rounded-circle mb-3 mb-sm-0">
                             <h5 class="menu-price">28K</h5>
                         </div>
                         <div class="col-8 col-sm-9">
@@ -298,9 +320,10 @@
                             <p class="m-0">Creamy and leafy, the best twist of Japanese classic drink</p>
                         </div>
                     </div>
-                    <div class="row align-items-center mb-5">
+                    <div class="row align-items-center mb-5" data-aos="fade-left" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
                         <div class="col-4 col-sm-3">
-                            <img src="img/menu-1.jpg" alt="" class="w-100 rounded-circle mb-3 mb-sm-0">
+                            <img src="img/menu/redvelvet.jpg" alt="" class="w-100 rounded-circle mb-3 mb-sm-0">
                             <h5 class="menu-price">25K</h5>
                         </div>
                         <div class="col-8 col-sm-9">
@@ -308,9 +331,10 @@
                             <p class="m-0">Our favorite red velvet drink with cream cheese notes</p>
                         </div>
                     </div>
-                    <div class="row align-items-center mb-5">
+                    <div class="row align-items-center mb-5" data-aos="fade-left" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
                         <div class="col-4 col-sm-3">
-                            <img src="img/menu-2.jpg" alt="" class="w-100 rounded-circle mb-3 mb-sm-0">
+                            <img src="img/menu/taro.jpg" alt="" class="w-100 rounded-circle mb-3 mb-sm-0">
                             <h5 class="menu-price">24K</h5>
                         </div>
                         <div class="col-8 col-sm-9">
@@ -318,9 +342,10 @@
                             <p class="m-0">Combination of purple sweet potato and creamy milk</p>
                         </div>
                     </div>
-                    <div class="row align-items-center mb-5">
+                    <div class="row align-items-center mb-5" data-aos="fade-left" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
                         <div class="col-4 col-sm-3">
-                            <img src="img/menu-3.jpg" alt="" class="w-100 rounded-circle mb-3 mb-sm-0">
+                            <img src="img/menu/dark-chocolate.jpg" alt="" class="w-100 rounded-circle mb-3 mb-sm-0">
                             <h5 class="menu-price">22K</h5>
                         </div>
                         <div class="col-8 col-sm-9">
@@ -334,15 +359,11 @@
     </div>
     <!-- Menu End -->
 
-
-    <!-- Testimoni Start -->
-    <!-- Testimoni End -->
-
-
     <!-- Contact Start -->
     <div class="container-fluid pt-5" id="contact">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
+                data-aos-offset="0">
                 <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Contact Us</h4>
                 <h1 class="display-4">Free To Contact Us</h1>
             </div>
@@ -502,7 +523,8 @@
     <!-- Testimonial Start -->
     <div class="container-fluid py-5">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
+                data-aos-offset="0">
                 <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonial</h4>
                 <h1 class="display-4">Client's Say</h1>
             </div>
@@ -554,7 +576,7 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="d-flex align-items-center mb-3">
-                        <img src="img/testimonial/gagahpp.jpg" alt="" class="img-fluid">
+                        <img src="img/testimonial/gagah.jpg" alt="" class="img-fluid">
                         <div class="ml-3">
                             <h4>Gagah Prasetyo</h4>
                             <i>Student</i>
@@ -670,6 +692,17 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,      // durasi animasi (ms)
+            once: true,         // animasi hanya sekali
+            easing: 'ease-in-out'
+        });
+    </script>
+
 </body>
 
 </html>
