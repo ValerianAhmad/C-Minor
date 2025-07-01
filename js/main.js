@@ -1,23 +1,23 @@
 (function ($) {
-  "use strict";
+  ('use strict');
 
   // Date & Time picker
-  $("#datePicker").datetimepicker({ format: "L", minDate: moment() });
-  $("#timePicker").datetimepicker({ format: "LT" });
+  $('#datePicker').datetimepicker({ format: 'L', minDate: moment() });
+  $('#timePicker').datetimepicker({ format: 'LT' });
 
   // Smooth scrolling
-  $("a.smooth-scroll").on("click", function (e) {
+  $('a.smooth-scroll').on('click', function (e) {
     e.preventDefault();
-    const target = $(this).attr("href");
-    $("html, body").animate(
+    const target = $(this).attr('href');
+    $('html, body').animate(
       { scrollTop: $(target).offset().top - 70 },
       800,
-      "easeInOutExpo"
+      'easeInOutExpo'
     );
   });
 
   // Testimonial carousel
-  $(".testimonial-carousel").owlCarousel({
+  $('.testimonial-carousel').owlCarousel({
     autoplay: true,
     smartSpeed: 1500,
     margin: 30,
@@ -33,32 +33,35 @@
   });
 
   // Back‑to‑top
-  $(window).on("scroll", function () {
+  $(window).on('scroll', function () {
     $(this).scrollTop() > 100
-      ? $(".back-to-top").fadeIn("slow")
-      : $(".back-to-top").fadeOut("slow");
+      ? $('.back-to-top').fadeIn('slow')
+      : $('.back-to-top').fadeOut('slow');
   });
-  $(".back-to-top").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 800, "easeInOutExpo");
+  $('.back-to-top').click(function () {
+    $('html, body').animate({ scrollTop: 0 }, 800, 'easeInOutExpo');
     return false;
   });
 
+  // === BOOTSTRAP TOOLTIP ===
+  $('[data-toggle="tooltip"]').tooltip();
+
   // === Reservation form validation & cancel ===
-  $("#reserveForm").on("submit", function (e) {
+  $('#reserveForm').on('submit', function (e) {
     e.preventDefault();
     if (this.checkValidity()) {
-      $("#reserve-alert").removeClass("d-none");
+      $('#reserve-alert').removeClass('d-none');
       this.reset();
-      this.classList.remove("was-validated");
-      setTimeout(() => $("#reserve-alert").addClass("d-none"), 4000);
+      this.classList.remove('was-validated');
+      setTimeout(() => $('#reserve-alert').addClass('d-none'), 4000);
     } else {
-      this.classList.add("was-validated");
+      this.classList.add('was-validated');
     }
   });
 
-  $("#reserveCancel").on("click", function () {
-    $("#reserveForm")[0].reset();
-    $("#reserveForm")[0].classList.remove("was-validated");
+  $('#reserveCancel').on('click', function () {
+    $('#reserveForm')[0].reset();
+    $('#reserveForm')[0].classList.remove('was-validated');
   });
 
   // ==== PRELOADER === //
